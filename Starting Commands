@@ -1,0 +1,21 @@
+create database student5thsem;
+use student5thsem;
+
+create table student(studusn int, studname varchar(50), email varchar(25));
+desc student; 
+insert into student values(100, 'xyz', 'darshan@gmail');
+commit;
+insert into student values(100, 'xyz', 'darshan@gmail');
+insert into student values(103, 'xysdfz', 'darshfdssfdan@gmail');
+commit;
+select * from student;
+update student set studname='helloooo' where studusn=103;
+
+create table teacher(teachid int, teachname varchar(50), teachemail varchar(50));
+desc teacher;
+insert into teacher values(500, 'rahul', 'rahul@gmail');
+commit;
+insert into teacher values(600, 'mohna', 'mohan@gmail');
+commit;
+desc teacher;
+select * from teacher;
